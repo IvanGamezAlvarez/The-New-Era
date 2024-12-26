@@ -23,54 +23,42 @@ header {
     top: 0px;
 }
 
-.navegation-bar {
+nav {
 
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(26, 33, 34);
+    background-color: rgb(26, 33, 34) !important;
     color: white;
     padding: 20px;
     z-index: 3;
 
-    ul {
-        display: flex;
-        width: 50%;
-        list-style: none;
-        justify-content: space-between;
+    div {
+        .title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 400;
+            font-style: normal;
+            font-family: "Libre Barcode 39 Text", system-ui;
+            color: white;
 
-        li {
-            width: 20%;
+            &:hover {
+                color: white;
+            }
         }
-    }
 
-    h3 {
-        font-size: 3rem;
-        font-weight: 400;
-        font-style: normal;
-        font-family: "Libre Barcode 39 Text", system-ui;
-    }
+        .nav-link {
+            color: white;
+        }
 
-    a {
-        text-align: center;
-        padding: 10px;
-        display: block;
-        height: 100%;
-
-        font-weight: 200;
-        border: 1px;
-        border-style: solid;
-        border-radius: 5px;
-
-        color: white;
-        text-decoration: none;
-
-        &:hover {
+        .navbar-toggler {
             background-color: white;
-            color: rgb(26, 33, 34);
         }
 
+
     }
+
+
 
 
 }
@@ -106,7 +94,7 @@ footer {
 }
 
 
-.Banner {
+.banner {
     padding: 30px;
     background-color: black;
     background-image: url("/img/Dragon\ Jade.jpg");
@@ -138,17 +126,9 @@ footer {
 }
 
 
-.Advise {
-    background-color: rgb(121, 14, 14);
-    color: white;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 5px;
 
 
-}
-
-.HighlightsMenu {
+.highlights-menu {
 
 
 
@@ -164,7 +144,7 @@ footer {
         font-size: larger;
     }
 
-    .FirstImages {
+    .first-images {
         height: 100%;
         width: 100%;
 
@@ -179,6 +159,7 @@ footer {
         }
 
         img {
+
             object-fit: cover;
             height: 100%;
             width: 100%;
@@ -194,7 +175,7 @@ footer {
 
 }
 
-.ProductMenu {
+.product-menu {
     padding-top: 20px;
     background-color: rgb(246, 246, 246);
     text-align: center;
@@ -212,10 +193,10 @@ footer {
 
     }
 
-    .Inputs {
+    .inputs {
         margin-top: 20px;
 
-        .GoldButton {
+        .gold-button {
 
             display: flex;
             align-items: center;
@@ -246,7 +227,7 @@ footer {
             }
         }
 
-        .TwoImage {
+        .two-image {
 
             margin-top: 40px;
             margin-left: 5%;
@@ -260,7 +241,7 @@ footer {
             gap: 5%;
         }
 
-        .DiamonButton {
+        .diamon-button {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -287,7 +268,7 @@ footer {
             }
         }
 
-        .SteelButton {
+        .steel-button {
             display: flex;
             align-items: center;
             justify-content: center;
@@ -321,49 +302,57 @@ footer {
 .products-main {
     background-color: rgb(227, 227, 227);
     display: grid;
-    grid-template-columns: 60% 40%;
-    height: 40rem;
+    grid-template-columns: 50% 50%;
+    height: 50rem;
 
     .image {
+
+        object-fit: cover;
         height: 100%;
         width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        overflow: hidden;
+
 
         img {
-        object-fit:cover;
-           width: 90%;
-           height: 90%;
+            border-radius: 2rem;
+            padding: 2rem;
+            height: 100%;
+            width: 100%;
         }
-      
+
     }
-    .info{
-        margin-top: 8rem;
-        h2{
+
+    .info {
+        margin-top: 4rem;
+
+        h2 {
 
             font-size: 2.5rem;
             text-align: center;
             font-weight: 400;
         }
-        p{
+
+        p {
             font-size: 1.5rem;
             text-align: center;
-            color:rgb(75, 75, 75) ;
+            color: rgb(75, 75, 75);
         }
-        .product-info{
+
+        .product-info {
             margin-top: 5rem;
             background-color: rgb(217, 217, 217);
             width: 80%;
             margin-left: auto;
             margin-right: auto;
-            h3{
+            border-radius: 5px;
+            h3 {
                 font-size: 2rem;
                 font-weight: 500;
                 text-align: center;
                 padding: 1rem;
             }
-            h4{
+
+            h4 {
                 font-size: 1.5rem;
                 font-weight: 400;
                 text-transform: uppercase;
@@ -371,45 +360,76 @@ footer {
                 text-align: center;
                 margin-bottom: 1rem;
             }
-            ul{
-                display: flex;
-                justify-content: space-around;
-                li{
-                    width: 30%;
-                    list-style: none;
-                    button{
-                        font-size: 1rem;
-                        width: 100%; 
-                        height: 2rem;
-                        background-color: rgb(217, 217, 217);
-                        border-radius: 3px;
-                        margin-bottom: 1rem;
-                        &:hover{
-                            background-color: rgb(25, 33, 34);
-                            color: white;
-                        }
-                       
-                        
-                        
-                    }
-                }
-            }
-            a{
+
+            a {
                 color: black;
                 display: block;
                 text-align: center;
                 margin-bottom: 2rem;
+                margin-top: .5rem;
             }
 
-            button{
+            button {
+                border-radius: 2rem;
+                color: white;
+                background-color: rgb(25, 32, 34);
                 margin-left: 10%;
                 margin-right: 10%;
                 width: 80%;
                 margin-bottom: 2rem;
             }
+
+            .size {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+
+                button {
+                    font-size: 1rem;
+                    width: 30%;
+                    height: 2rem;
+                    background-color: rgb(217, 217, 217);
+                    border-radius: 3px;
+                    margin: 0;
+                    color: black;
+                    &:hover {
+                        background-color: rgb(25, 33, 34);
+                        color: white;
+                    }
+                }
+            }
+
+
+        }
+
+        a {
+            color: black;
+            display: block;
+            text-align: right;
+            margin-top: 4rem;
+            margin-right: 1rem;
+            
         }
     }
 
+
+}
+.product-description{
+    margin-bottom: 3rem;
+    h2{
+        padding-top: 1rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+        border-bottom: 1px solid gray ;
+        margin: 0 2rem;
+        
+        border-style: sol;
+       
+    }
+    p{
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
 
 }
 
@@ -440,7 +460,7 @@ footer {
         }
     }
 
-    .Banner {
+    .banner {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -453,7 +473,7 @@ footer {
     }
 
 
-    .HighlightsMenu {
+    .highlights-menu {
         p {
             margin-top: 2rem;
         }
@@ -470,7 +490,7 @@ footer {
 
     }
 
-    .ProductMenu {
+    .product-menu {
         .Inputs {
             .GoldButton {
                 button {
@@ -484,6 +504,19 @@ footer {
             }
         }
     }
+    .products-main{
+        height: 90rem;
+    grid-template-columns: repeat(1, 1fr);        
 
+    }
+    .info{
+        .size {
+            height: 10rem;
+            flex-direction: column;
+            }
+        }
+        a{
+            margin-bottom: 1rem;
+        }
 
-}
+    }
