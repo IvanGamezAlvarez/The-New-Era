@@ -1,0 +1,67 @@
+
+@media (max-width: 890px) {
+    header {
+        position: relative;
+    }
+
+
+    .banner {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        div {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 40%;
+        }
+    }
+
+
+    .highlights-menu {
+        p {
+            margin-top: 2rem;
+        }
+
+        .FirstImages {
+            grid-template-columns: repeat(2, 1fr);
+
+            .img1 {
+                grid-column: span 2;
+                grid-row: span 2;
+            }
+        }
+
+
+    }
+
+    .product-menu {
+        .Inputs {
+            .GoldButton {
+                button {
+                    height: 10%;
+                    width: 30%;
+                }
+            }
+
+            .TwoImage {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    }
+    .products-main{
+        height: 90rem;
+    grid-template-columns: repeat(1, 1fr);        
+
+    }
+    .info{
+        .size {
+            height: 10rem;
+            flex-direction: column;
+            }
+        }
+        a{
+            margin-bottom: 1rem;
+        }
+
+    }

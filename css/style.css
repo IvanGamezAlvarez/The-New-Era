@@ -390,6 +390,7 @@ footer {
 
 
 }
+
 .product-description{
     margin-bottom: 3rem;
     h2{
@@ -406,6 +407,7 @@ footer {
         margin-left: 2rem;
     }
 }
+
 @media (max-width: 890px) {
     header {
         position: relative;

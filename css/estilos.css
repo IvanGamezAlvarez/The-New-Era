@@ -1,4 +1,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@media (max-width: 890px) {
+  header {
+    position: relative;
+  }
+  .banner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .banner div {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40%;
+  }
+  .highlights-menu p {
+    margin-top: 2rem;
+  }
+  .highlights-menu .FirstImages {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .highlights-menu .FirstImages .img1 {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  .product-menu .Inputs .GoldButton button {
+    height: 10%;
+    width: 30%;
+  }
+  .product-menu .Inputs .TwoImage {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .products-main {
+    height: 90rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .info .size {
+    height: 10rem;
+    flex-direction: column;
+  }
+  a {
+    margin-bottom: 1rem;
+  }
+}
 /* Reset css */
 * {
   margin: 0;
@@ -41,6 +84,299 @@ nav div .nav-link {
 }
 nav div .navbar-toggler {
   background-color: white;
+}
+
+footer {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 50px;
+  color: white;
+  background-color: rgb(33, 33, 33);
+}
+footer h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  font-style: normal;
+  font-family: "Libre Barcode 39 Text", system-ui;
+}
+footer h3 {
+  text-transform: uppercase;
+}
+footer a {
+  color: white;
+}
+
+.banner {
+  padding: 30px;
+  background-color: black;
+  background-image: url("../img/Dragon Jade.jpg");
+  min-height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  color: white;
+  align-content: center;
+}
+.banner div {
+  margin-right: 600px;
+  text-align: center;
+}
+.banner div h1 {
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 6rem;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Libre Barcode 39 Text", system-ui;
+}
+.banner div p {
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.highlights-menu .phrases {
+  display: flex;
+  justify-content: space-around;
+}
+.highlights-menu p {
+  text-align: center;
+  padding: 20px;
+  text-transform: uppercase;
+  font-size: larger;
+}
+.highlights-menu .first-images {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1%;
+  padding: 0 2rem;
+}
+.highlights-menu .first-images a {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.highlights-menu .first-images img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.product-description {
+  margin-bottom: 3rem;
+}
+.product-description h2 {
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  border-bottom: 1px solid gray;
+  margin: 0 2rem;
+  border-style: sol;
+}
+.product-description p {
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+.product-menu {
+  padding-top: 20px;
+  background-color: rgb(246, 246, 246);
+  text-align: center;
+}
+.product-menu h4 {
+  color: gray;
+  font-weight: 400;
+  font-size: small;
+}
+.product-menu h3 {
+  font-weight: 400;
+}
+.product-menu .inputs {
+  margin-top: 20px;
+}
+.product-menu .inputs .gold-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background-image: url("../img/mano-1.jpg");
+  object-fit: cover;
+  height: 300px;
+  width: 90%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.product-menu .inputs .gold-button button {
+  font-size: larger;
+  background-color: gray;
+  color: white;
+  border-radius: 5px;
+  border-color: white;
+  height: 20%;
+  width: 15%;
+  backdrop-filter: blur(5px);
+  background-color: rgba(106, 106, 106, 0.5);
+}
+.product-menu .inputs .two-image {
+  margin-top: 40px;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  align-items: center;
+  height: 700px;
+  gap: 5%;
+}
+.product-menu .inputs .diamon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-image: url("../img/mano-2.jpg");
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.product-menu .inputs .diamon-button button {
+  font-size: larger;
+  background-color: gray;
+  border-color: white;
+  color: white;
+  border-radius: 5px;
+  stroke: 10px;
+  height: 10%;
+  width: 30%;
+  backdrop-filter: blur(5px);
+  background-color: rgba(106, 106, 106, 0.5);
+}
+.product-menu .inputs .steel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-image: url("../img/mano-3.jpg");
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.product-menu .inputs .steel-button button {
+  font-size: larger;
+  background-color: black;
+  color: white;
+  border-color: white;
+  border-radius: 5px;
+  height: 10%;
+  width: 30%;
+  backdrop-filter: blur(5px);
+  background-color: rgba(106, 106, 106, 0.5);
+}
+
+.products-main {
+  background-color: rgb(227, 227, 227);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 50rem;
+}
+.products-main .image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.products-main .image img {
+  border-radius: 2rem;
+  padding: 2rem;
+  height: 100%;
+  width: 100%;
+}
+.products-main .info {
+  margin-top: 4rem;
+}
+.products-main .info h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 400;
+}
+.products-main .info p {
+  font-size: 1.5rem;
+  text-align: center;
+  color: rgb(75, 75, 75);
+}
+.products-main .info .product-info {
+  margin-top: 5rem;
+  background-color: rgb(217, 217, 217);
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+.products-main .info .product-info h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 1rem;
+}
+.products-main .info .product-info h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.products-main .info .product-info a {
+  color: black;
+  display: block;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 0.5rem;
+}
+.products-main .info .product-info button {
+  border-radius: 2rem;
+  color: white;
+  background-color: rgb(25, 32, 34);
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+  margin-bottom: 2rem;
+}
+.products-main .info .product-info .size {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.products-main .info .product-info .size button {
+  font-size: 1rem;
+  width: 30%;
+  height: 2rem;
+  background-color: rgb(217, 217, 217);
+  border-radius: 3px;
+  margin: 0;
+  color: black;
+}
+.products-main .info .product-info .size button:hover {
+  background-color: rgb(25, 33, 34);
+  color: white;
+}
+.products-main .info a {
+  color: black;
+  display: block;
+  text-align: right;
+  margin-top: 4rem;
+  margin-right: 1rem;
 }
 
 /*# sourceMappingURL=estilos.css.map */

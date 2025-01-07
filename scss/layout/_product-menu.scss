@@ -1,0 +1,109 @@
+.product-menu {
+    padding-top: 20px;
+    background-color: rgb(246, 246, 246);
+    text-align: center;
+    h4 {
+        color: gray;
+        font-weight: 400;
+        font-size: small;
+    }
+    h3 {
+        font-weight: 400;
+    }
+
+    .inputs {
+        margin-top: 20px;
+        .gold-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+            background-image: url("../img/mano-1.jpg");
+            object-fit: cover;
+            height: 300px;
+            width: 90%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            button {
+                font-size: larger;
+                background-color: gray;
+                color: white;
+                border-radius: 5px;
+                border-color: white;
+                height: 20%;
+                width: 15%;
+                backdrop-filter: blur(5px);
+                background-color: rgba(106, 106, 106, 0.5);
+            }
+        }
+
+        .two-image {
+            margin-top: 40px;
+            margin-left: 5%;
+            margin-right: 5%;
+            padding-bottom: 40px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            align-items: center;
+            height: 700px;
+            gap: 5%;
+        }
+
+        .diamon-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            background-image: url("../img/mano-2.jpg");
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            button {
+                font-size: larger;
+                background-color: gray;
+                border-color: white;
+                color: white;
+                border-radius: 5px;
+                stroke: 10px;
+                height: 10%;
+                width: 30%;
+                backdrop-filter: blur(5px);
+                background-color: rgba(106, 106, 106, 0.5);
+            }
+        }
+
+        .steel-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            background-image: url("../img/mano-3.jpg");
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+            button {
+                font-size: larger;
+                background-color: black;
+                color: white;
+                border-color: white;
+                border-radius: 5px;
+                height: 10%;
+                width: 30%;
+                backdrop-filter: blur(5px);
+                background-color: rgba(106, 106, 106, 0.5);
+            }
+        }
+    }
+}

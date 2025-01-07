@@ -1,4 +1,4 @@
-
+@use '../base/_variables.scss' as variables;
 header {
     z-index: 9999;
     position: sticky;
@@ -10,7 +10,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(26, 33, 34) !important;
+    background-color: variables.$Main-Color ;
     color: white;
     padding: 20px;
     z-index: 3;

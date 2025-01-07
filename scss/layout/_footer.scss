@@ -1,0 +1,28 @@
+footer {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+
+    padding: 50px;
+
+    color: white;
+
+    h2 {
+        font-size: 3rem;
+        font-weight: 500;
+        font-style: normal;
+        font-family: "Libre Barcode 39 Text", system-ui;
+
+    }
+
+    h3 {
+        text-transform: uppercase;
+    }
+
+    a {
+        color: white;
+    }
+
+    background-color: rgb(33, 33, 33);
+
+}
