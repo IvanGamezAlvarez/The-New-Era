@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+/* Reset css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto Mono", serif;
+}
+
+header {
+  z-index: 9999;
+  position: sticky;
+  top: 0px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(26, 33, 34) !important;
+  color: white;
+  padding: 20px;
+  z-index: 3;
+}
+nav div .title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Libre Barcode 39 Text", system-ui;
+  color: white;
+}
+nav div .title:hover {
+  color: white;
+}
+nav div .nav-link {
+  color: white;
+}
+nav div .navbar-toggler {
+  background-color: white;
+}
+
+/*# sourceMappingURL=estilos.css.map */
