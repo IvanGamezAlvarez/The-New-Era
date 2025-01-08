@@ -449,7 +449,7 @@ footer {
             margin-top: 2rem;
         }
 
-        .FirstImages {
+        .first-images {
             grid-template-columns: repeat(2, 1fr);
 
             .img1 {
