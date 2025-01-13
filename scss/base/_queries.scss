@@ -43,16 +43,27 @@
     }
 
     .products-main{
-        height: 90rem;
+        height: 100rem;
         grid-template-columns: repeat(1, 1fr);        
     }
     .info{
+        margin-top: 0rem;
+        padding-top: 0rem;
         .size {
             height: 10rem;
             flex-direction: column;
             }
         }
+   
         a{
             margin-bottom: 1rem;
         }
+        .catalog-index{
+           
+            grid-template-columns: repeat(1, 1fr);
+            
+            gap: 2rem;
+        }
+        
 }
+

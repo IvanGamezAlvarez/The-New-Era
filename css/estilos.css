@@ -233,20 +233,17 @@ footer a {
 .products-main {
   background-color: rgb(227, 227, 227);
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 60% 40%;
   height: 50rem;
-}
-.products-main .image {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
+  align-items: center;
 }
 .products-main .image img {
   border-radius: 2rem;
   padding: 2rem;
-  height: 100%;
+  height: 50rem;
   width: 100%;
+  object-fit: contain;
+  overflow: hidden;
 }
 .products-main .info {
   margin-top: 4rem;
@@ -325,6 +322,57 @@ footer a {
   margin-right: 1rem;
 }
 
+main {
+  margin-bottom: 2rem;
+}
+
+.catalog-title {
+  padding: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: rgb(246, 246, 246);
+  margin: 0;
+}
+
+.catalog-description {
+  font-size: large;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  background-color: rgb(246, 246, 246);
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.catalog-index {
+  margin-top: 2rem;
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  gap: 1rem;
+}
+.catalog-index .catalog-card p {
+  text-decoration: none;
+  position: relative;
+  bottom: 50%;
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+.catalog-index .catalog-card img {
+  border-radius: 1rem;
+  display: inline;
+  object-fit: cover;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
 @media (max-width: 890px) {
   .banner {
     background-size: cover;
@@ -354,8 +402,12 @@ footer a {
     grid-template-columns: repeat(1, 1fr);
   }
   .products-main {
-    height: 90rem;
+    height: 100rem;
     grid-template-columns: repeat(1, 1fr);
+  }
+  .info {
+    margin-top: 0rem;
+    padding-top: 0rem;
   }
   .info .size {
     height: 10rem;
@@ -363,6 +415,10 @@ footer a {
   }
   a {
     margin-bottom: 1rem;
+  }
+  .catalog-index {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
   }
 }
 /* Reset css */

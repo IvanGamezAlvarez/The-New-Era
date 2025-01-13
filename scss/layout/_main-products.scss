@@ -1,22 +1,25 @@
 .products-main {
     background-color: rgb(227, 227, 227);
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 60% 40%;
     height: 50rem;
+    align-items: center;
 
     .image {
-
-        object-fit: cover;
-        height: 100%;
-        width: 100%;
-        overflow: hidden;
-
+        
+        
 
         img {
+    
+            
             border-radius: 2rem;
             padding: 2rem;
-            height: 100%;
+            height: 50rem;
             width: 100%;
+
+            
+            object-fit:contain;
+            overflow: hidden;
         }
 
     }
