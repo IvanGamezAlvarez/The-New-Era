@@ -1,6 +1,6 @@
 @use '../base/_variables.scss' as variables;
 
-main{
+.main-contact{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 2;
@@ -8,19 +8,40 @@ main{
         text-align: center;
         padding: 2rem;
         font-weight: 600;
-        text-transform: uppercase;
+        text-transform: capitalize;
         background-color: variables.$Secondary-Color;
     }
+   
 
     .contact-info{
-    
+        h3{
+            padding: 1rem;
+            text-align: justify;
+        }
+        p{
+            text-align: justify;
+            padding: 2rem;
+            font-size: large;
+        span{
+            font-weight: 700;
+            text-transform:inherit;
+        }
+        }
     }
     .contact-location{
+        h3{
+            padding: 1rem;
+            margin-left: 2rem;
+            text-align: justify;
+            
+        }
         img{
             width: 100%;
             height: 40rem;
             object-fit: cover;
             overflow: hidden;
+            padding: 2rem;
+            border-radius: 10px;
 
         }
     }

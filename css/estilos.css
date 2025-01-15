@@ -322,7 +322,7 @@ footer a {
   margin-right: 1rem;
 }
 
-main {
+.main-catalog {
   margin-bottom: 2rem;
 }
 
@@ -377,23 +377,43 @@ main {
   width: 100%;
   height: 100%;
 }
-main {
+.main-contact {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: 2;
 }
-main h2 {
+.main-contact h2 {
   text-align: center;
   padding: 2rem;
   font-weight: 600;
-  text-transform: uppercase;
+  text-transform: capitalize;
   background-color: rgb(246, 246, 246);
 }
-main .contact-location img {
+.main-contact .contact-info h3 {
+  padding: 1rem;
+  text-align: justify;
+}
+.main-contact .contact-info p {
+  text-align: justify;
+  padding: 2rem;
+  font-size: large;
+}
+.main-contact .contact-info p span {
+  font-weight: 700;
+  text-transform: inherit;
+}
+.main-contact .contact-location h3 {
+  padding: 1rem;
+  margin-left: 2rem;
+  text-align: justify;
+}
+.main-contact .contact-location img {
   width: 100%;
   height: 40rem;
   object-fit: cover;
   overflow: hidden;
+  padding: 2rem;
+  border-radius: 10px;
 }
 
 @media (max-width: 890px) {
@@ -442,6 +462,18 @@ main .contact-location img {
   .catalog-index {
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
+  }
+  .main-contact {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .main-contact .contact-info h3 {
+    text-align: center;
+  }
+  .main-contact .contact-info p {
+    text-align: center;
+  }
+  .main-contact .contact-location h3 {
+    text-align: center;
   }
 }
 /* Reset css */
