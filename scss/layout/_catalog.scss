@@ -56,8 +56,12 @@
                 overflow: hidden;
                 width: 100%;
                 height: 100%;
+                transition: .7s;
                 &:hover{
-                 
+                  
+                        filter: blur(5px);
+                        transform: scale(.96);
+                  
                 }
         }    
         }

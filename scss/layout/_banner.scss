@@ -1,30 +1,62 @@
 .banner {
+    background-color: black;
+    // transition: ;
+    .banner-bg{
+
     padding: 30px;
     background-color: black;
     background-image: url("../img/Dragon\ Jade.jpg");
+    
     min-height: 500px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: right;
+    
     color: white;
     align-content: center;
+    
+    animation-timing-function: linear;
+    animation: Fade-In 2s;
+    background-position: right;
+   
+    
+        div {
+            margin-right: 600px;
+            text-align: center;
+            transition-property: opacity;
+            transition: Opacity 1s fade-in;
 
-    div {
-        margin-right: 600px;
-        text-align: center;
+            h1 {
+                padding: 10px;
+                text-transform: uppercase;
+                font-size: 6rem;
+                font-weight: 400;
+                font-style: normal;
+                font-family: "Libre Barcode 39 Text", system-ui;
+            }
 
-        h1 {
-            padding: 10px;
-            text-transform: uppercase;
-            font-size: 6rem;
-            font-weight: 400;
-            font-style: normal;
-            font-family: "Libre Barcode 39 Text", system-ui;
-        }
-
-        p {
-            font-weight: 200;
-            text-transform: uppercase;
+            p {
+                font-weight: 200;
+                text-transform: uppercase;
+            }
         }
     }
+
+}
+
+
+@keyframes Fade-In {
+    0%{
+        opacity: 0;
+       
+        background-position: left;
+    }
+    20%{
+        opacity: 0;
+
+    }
+    100%{
+        opacity: 1;
+        background-position: right;
+    }
+    
 }

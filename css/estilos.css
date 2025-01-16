@@ -54,21 +54,28 @@ footer a {
 }
 
 .banner {
+  background-color: black;
+}
+.banner .banner-bg {
   padding: 30px;
   background-color: black;
   background-image: url("../img/Dragon Jade.jpg");
   min-height: 500px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: right;
   color: white;
   align-content: center;
+  animation-timing-function: linear;
+  animation: Fade-In 2s;
+  background-position: right;
 }
-.banner div {
+.banner .banner-bg div {
   margin-right: 600px;
   text-align: center;
+  transition-property: opacity;
+  transition: Opacity 1s fade-in;
 }
-.banner div h1 {
+.banner .banner-bg div h1 {
   padding: 10px;
   text-transform: uppercase;
   font-size: 6rem;
@@ -76,11 +83,24 @@ footer a {
   font-style: normal;
   font-family: "Libre Barcode 39 Text", system-ui;
 }
-.banner div p {
+.banner .banner-bg div p {
   font-weight: 200;
   text-transform: uppercase;
 }
 
+@keyframes Fade-In {
+  0% {
+    opacity: 0;
+    background-position: left;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    background-position: right;
+  }
+}
 .highlights-menu .phrases {
   display: flex;
   justify-content: space-around;
@@ -100,14 +120,20 @@ footer a {
   padding: 0 2rem;
 }
 .highlights-menu .first-images a {
+  color: black;
   grid-column: span 2;
   grid-row: span 2;
 }
 .highlights-menu .first-images img {
   object-fit: cover;
+  overflow: hidden;
   height: 100%;
   width: 100%;
   border-radius: 5px;
+  transition: 0.5s linear;
+}
+.highlights-menu .first-images img:hover {
+  scale: 0.98;
 }
 
 .product-description {
@@ -167,6 +193,12 @@ footer a {
   width: 15%;
   backdrop-filter: blur(5px);
   background-color: rgba(106, 106, 106, 0.5);
+  transition: 0.4s;
+}
+.product-menu .inputs .gold-button button:hover {
+  scale: 1.05;
+  background-color: white;
+  color: black;
 }
 .product-menu .inputs .two-image {
   margin-top: 40px;
@@ -204,6 +236,12 @@ footer a {
   width: 30%;
   backdrop-filter: blur(5px);
   background-color: rgba(106, 106, 106, 0.5);
+  transition: 0.4s;
+}
+.product-menu .inputs .diamon-button button:hover {
+  scale: 1.05;
+  background-color: white;
+  color: black;
 }
 .product-menu .inputs .steel-button {
   display: flex;
@@ -228,6 +266,12 @@ footer a {
   width: 30%;
   backdrop-filter: blur(5px);
   background-color: rgba(106, 106, 106, 0.5);
+  transition: 0.4s;
+}
+.product-menu .inputs .steel-button button:hover {
+  scale: 1.05;
+  background-color: white;
+  color: black;
 }
 
 .products-main {
@@ -376,7 +420,13 @@ footer a {
   overflow: hidden;
   width: 100%;
   height: 100%;
+  transition: 0.7s;
 }
+.catalog-index .catalog-card a img:hover {
+  filter: blur(5px);
+  transform: scale(0.96);
+}
+
 .main-contact {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -417,12 +467,11 @@ footer a {
 }
 
 @media (max-width: 890px) {
-  .banner {
+  .banner .banner-bg {
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
   }
-  .banner div {
+  .banner .banner-bg div {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40%;
