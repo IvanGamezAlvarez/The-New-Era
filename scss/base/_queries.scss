@@ -12,6 +12,7 @@
             }
         }
     }
+
    
 
     .highlights-menu {
@@ -56,9 +57,8 @@
             }
         }
    
-        a{
-            margin-bottom: 1rem;
-        }
+
+
         .catalog-index{
            
             grid-template-columns: repeat(1, 1fr);
@@ -66,23 +66,41 @@
             gap: 2rem;
         }
         .main-contact{
-            grid-template-columns: repeat(1, 1fr);
-            .contact-info{
-                h3{
-                    text-align: center;
+
+            .contact-location{
+
+                img{
+
+                    width: 90%;
+
+        
                 }
+            }
+
+            .contact-info{
+           
                 p{
-                    text-align: center;
+                    width: 100%;
                     }
             }
-            .contact-location{
-                h3{
-                    text-align: center;
-                }
-         
+
+    }
+    .us-main{
+        margin: 2rem 2rem;
+        align-items: center;
+
+        h1{
+            grid-column: span 2;
+        }
+        img{
+            width: 80%;
+            grid-column: span 2;
+            margin: auto;
             
         }
     }
+   
+  
 }
 
 
